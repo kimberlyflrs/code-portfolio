@@ -6,17 +6,24 @@
 body{
     background-color: #f9f9f9;
 }
-#home{
-    text-align: center;
-    padding: 10% 0;
-}
+
 
 #home, #project, #about, #contact{
     text-align: center;
 }
 
-#home, #about{
+#about-section{
     background:  #d7dae5;
+}
+
+#home{
+    padding: 20% 0;
+    background-image: url(palm-trees.jpg);
+    background-color: #d7dae5;
+    background-position:center;
+    background-repeat: no-repeat;
+    height:300px;
+    background-size: cover;
 }
 
 nav{
@@ -67,11 +74,39 @@ nav{
     transition: all 0.3s ease;
 }
 
+.row2 {
+    display: flex;
+  }
+  
+  .column {
+    flex: 50%;
+  }
+
+  .right-side{
+      margin-right: 20vh;
+      text-align: center;
+  }
+
+  .right-side p{
+      text-align: justify;
+  }
+
+  .left-side{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+.example{
+    padding: 20px 0;
+}
+
 p, h3, button, li, nav{
     font-family: 'Roboto', sans-serif;
 }
 
-h1, h2{
+h1, h2, h4{
     font-family: 'Raleway', sans-serif;
 }
 
@@ -102,9 +137,9 @@ i{
 }
 
 @media screen and (max-width: 768px){
-    body{
+    /*body{
         overflow: hidden;
-    }
+    }*/
     .nav-links{
         position: absolute;
         right: 0px;
@@ -115,8 +150,7 @@ i{
         flex-direction: column;
         align-items: center;
         width: 50%;
-        transform: translateX(100%);
-        
+        transform: translateX(100%);  
     }
     .nav-links li{
         opacity: 0;
@@ -124,8 +158,30 @@ i{
     .menu{
         display: block;
     }
+    .row2{
+        display: block;;
+    }
 
+    .column{
+        flex: 100%
+    }
 
+    .right-side{
+        margin: 0 15vh;
+    }
+    .ex-title{
+        display: none;
+    }
+    .example-title{
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 768px){
+    .example-title{
+        display:none;
+    }
 }
 
 .nav-active{

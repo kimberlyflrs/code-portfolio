@@ -8,6 +8,8 @@ const navSlide = ()=>{
     menu.addEventListener('click', ()=>{
         nav.classList.toggle('nav-active');
         nav.style.transition= 'transform 0.5s ease-in';
+        //needs to be removed afterwards to prevent 
+        //the transition occuring after click
 
         navLinks.forEach((link, index)=>{
             if(link.style.animation){
