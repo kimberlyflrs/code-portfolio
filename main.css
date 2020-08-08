@@ -8,7 +8,7 @@ body{
 }
 
 
-#home, #project, #about, #contact, #contact-form{
+#home, #project, #about, #contact, h2{
     text-align: center;
 }
 
@@ -141,23 +141,63 @@ i{
 }
 
 #contact-form{
-    padding-top: 8vh;
+    padding: 15vh 0;
+    display:flex;
+    justify-content: center;
 }
 
 #form{
-    padding: 10vh 0;
+    padding: 5vh 5vh;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow:5px 10px 8px #32292f;
+    text-align: center;
+}
+
+.form-bg{
+    background-image: url(palm-trees.jpg);
+    background-color: #d7dae5;
+    background-position:center;
+    background-repeat: no-repeat;
+    height:100%;
+    background-size: cover;
+}
+
+input, textarea{
+    display:block;
+    margin-bottom: 20px;
+    width: 300px;
 }
 
 .cover{
     background-image: url(single-palm-tree.jpg);
 }
 
-label{
-    padding: 20px;
+input[type=text], input[type=email], textarea{
+    border:none;
+    border-bottom: 2px solid #32292f;
+    font-size: 15px;
+    padding: 10px
 }
 
-input{
-    padding:7px;
+#submit{
+    background-color: #d3d0c2;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    color:white;
+}
+
+#submit:hover{
+    background-color: #ccb448;
+    color:white;
+}
+
+.gold-line{
+    width: 200px;
+    height:5px;
+    background-color: #ccb448;
+    display: inline-block;
 }
 
 @media screen and (max-width: 768px){

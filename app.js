@@ -36,5 +36,5 @@ const wordChange = () =>{
 
 window.onload=function(){
     navSlide();
-    wordChange();
+    //wordChange();
 }
