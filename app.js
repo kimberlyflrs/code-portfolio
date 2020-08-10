@@ -24,17 +24,6 @@ const navSlide = ()=>{
     })
 }
 
-const wordChange = () =>{
-    //changes from front-end developer to designer to user research
-    const word = document.querySelector('.wordChange');
-    console.log('got it')
-    //push text up after 4 seconds
-    setTimeout(function(){ alert("Hello"); }, 3000);
-    //show new word
-    //repeat
-}
-
 window.onload=function(){
     navSlide();
-    //wordChange();
 }

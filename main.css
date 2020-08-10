@@ -4,16 +4,127 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #f9f9f9;
+    background-color: white;
 }
 
 
-#home, #project, #about, #contact, h2{
+#home, #project, #contact, .heading{
     text-align: center;
 }
 
+.heading{
+    margin: 5vh;
+}
+
+.row-home{
+    display: flex;
+}
+
+.column-home{
+    flex: 50%;
+}
+
+.column-home2{
+    flex:50%
+}
+
+
+/*WORKING HERE RIGHT NOW*/
 #about-section{
-    background:  #d7dae5;
+    margin: 10vh 0;
+}
+
+#about{
+    margin-right: 15vh;
+    padding:20px;
+    text-align: justify;
+}
+
+#img{
+    height: 50vh;
+    width:auto;
+}
+
+#image{
+    text-align: center;
+}
+
+
+.column-3{
+   flex: 33%;
+   margin: 0 25px;
+   text-align:center;
+   border: solid .25px #454545;
+   margin-top: 5vh;
+}
+
+.service-type{
+    color:white;
+    background-color: #454851;
+    padding: 5vh 0;
+}
+
+.service{
+    list-style-type: none;
+}
+
+.service li{
+    padding: 10px;
+}
+
+.testing{
+    background-image: url(palm-trees.jpg);
+    background-color: #d7dae5;
+    background-position:center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    background-size: cover;
+    margin-top: 8vh;
+    padding: 20vh 0;
+    box-shadow: 25px 10px #8BB380;
+}
+
+.test{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn2{
+    background-color: #8BB380;
+    padding: 10px 30px;
+    width: 175px;
+    border: none;
+    border-radius: 30px;
+    color:white;
+    text-decoration: none;
+}
+
+.btn2:hover{
+    background-color: #d3d0c2;
+    color:white;
+}
+
+.career{
+    padding: 50px 0;
+}
+
+h1{
+    font-size: 40px;
+}
+
+.career p{
+    font-size: 20px;
+}
+/*WORKING HERE RIGHT NOW*/
+
+#service-section{
+    margin: 20px 0;
+}
+
+.spacing-below{
+    padding-bottom: 20px;
 }
 
 #home{
@@ -34,14 +145,17 @@ nav{
     align-items: center;
     min-height: 8vh;
     background-color: #f9f9f9;
+    opacity: 75%;
     position: fixed;
     top:0;
     width:100%;
+    z-index:900;
 }
 
 .logo{
-    color:gold;
     letter-spacing: 5px;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .nav-links{
@@ -106,13 +220,14 @@ nav{
     padding: 20px 0;
 }
 
-p, h3, button, li, nav, label{
-    font-family: 'Roboto', sans-serif;
+p, button, li, nav, label, h3{
+    font-family: 'Poppins', sans-serif;
 }
 
 h1, h2, h4{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Libre Caslon Display', sans-serif;
 }
+
 
 button{
     background-color: white;
@@ -193,10 +308,10 @@ input[type=text], input[type=email], textarea{
     color:white;
 }
 
-.gold-line{
+.line{
     width: 200px;
     height:5px;
-    background-color: #ccb448;
+    background-color: #8BB380;
     display: inline-block;
 }
 
@@ -223,11 +338,19 @@ input[type=text], input[type=email], textarea{
         display: block;
     }
     .row2{
-        display: block;;
+        display: block;
     }
 
     .column{
         flex: 100%
+    }
+
+    .column-home{
+        flex:25%
+    }
+
+    .column-home2{
+        flex:75%;
     }
 
     .right-side{
@@ -238,6 +361,16 @@ input[type=text], input[type=email], textarea{
     }
     .example-title{
         text-align: center;
+    }
+
+    #about{
+        margin: 5vh;
+        padding:20px;
+        text-align: justify;
+    }
+
+    h1{
+        font-size: 30px;
     }
 
 }
