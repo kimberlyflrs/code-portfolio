@@ -5,10 +5,25 @@
 }
 body{
     background-color: white;
+    animation: fadeInAnimation ease 4s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
 }
 
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+}
 
-#home, #project, #contact, .heading{
+.hide{
+    opacity: 0;
+}
+
+#home, #project, #contact, .heading, .greenline{
     text-align: center;
 }
 
@@ -72,6 +87,26 @@ body{
     padding: 10px;
 }
 
+.beach{
+    background-image: url(palm-trees2.jpg);
+    background-color: #8BB380;
+    background-position:center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    background-size: cover;
+    margin-top: 8vh;
+    padding-bottom: 20vh;
+    box-shadow: 25px 10px #454851;
+}
+
+.project{
+    text-align: center;
+    margin-top:8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .testing{
     background-image: url(palm-trees.jpg);
     background-color: #d7dae5;
@@ -91,7 +126,7 @@ body{
     justify-content: center;
 }
 
-.btn2{
+.btn2, .project-btn, .filter-btn{
     background-color: #8BB380;
     padding: 10px 30px;
     width: 175px;
@@ -99,6 +134,11 @@ body{
     border-radius: 30px;
     color:white;
     text-decoration: none;
+}
+
+.project-btn{
+    width: 140px;
+    margin: 15px;
 }
 
 .btn2:hover{
@@ -216,9 +256,20 @@ nav{
     width: 50%;
   }
 
-.example{
+.filterProject{ /*filter*/
     padding: 20px 0;
+    display:none;
 }
+
+.show{
+    display:block;
+}
+
+#filter{
+    margin: 20px;
+}
+
+/*working above here*/
 
 p, button, li, nav, label, h3{
     font-family: 'Poppins', sans-serif;
@@ -229,14 +280,7 @@ h1, h2, h4{
 }
 
 
-button{
-    background-color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 30px;
-}
-
-button:hover{
+button:hover, .filter-btn:hover, .active-btn{
     background-color: #b8b08d;
     color:white;
 }
@@ -308,17 +352,33 @@ input[type=text], input[type=email], textarea{
     color:white;
 }
 
-.line{
+.line, .project-line{
     width: 200px;
     height:5px;
     background-color: #8BB380;
     display: inline-block;
 }
 
+.filter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 @media screen and (max-width: 768px){
     /*body{
         overflow: hidden;
     }*/
+    .filter{
+        display: block;
+        text-align: center;
+    }
+
+    .filter button{
+        margin: 5px;
+    }
+
+
     .nav-links{
         position: absolute;
         right: 0px;
@@ -356,11 +416,18 @@ input[type=text], input[type=email], textarea{
     .right-side{
         margin: 0 15vh;
     }
-    .ex-title{
+    .project-title, .project-line{
         display: none;
     }
-    .example-title{
+    .sm-project-title, .sm-project-line{
         text-align: center;
+    }
+
+    .sm-project-line{
+        width: 200px;
+        height:5px;
+        background-color: #8BB380;
+        display: inline-block;
     }
 
     #about{
@@ -376,7 +443,7 @@ input[type=text], input[type=email], textarea{
 }
 
 @media screen and (min-width: 768px){
-    .example-title{
+    .sm-project-title, .sm-project-line{
         display:none;
     }
 }
