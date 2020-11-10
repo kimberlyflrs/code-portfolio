@@ -136,6 +136,26 @@ body{
     text-decoration: none;
 }
 
+
+.code-project{
+    padding:50px 0px;
+}
+
+.links{
+    background-color: #8BB380;
+    padding: 10px 30px;
+    width: 175px;
+    border: none;
+    border-radius: 30px;
+    color:white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.link-div{
+    padding:30px 0;
+}
+
 .project-btn{
     width: 140px;
     margin: 15px;
