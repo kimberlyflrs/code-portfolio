@@ -17,44 +17,163 @@
 </head>
 
 <body>
-    <nav class="sticky">
-        <div class="logo">
-            <h4>KF</h4>
-        </div>
-        <ul class="nav-links">
-            <li class="nav-item"><a href="index.html">Home</a></li>
-            <li class="nav-item"><a href="projects.html">Projects</a></li>
-            <li class="nav-item"><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="menu">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
 
-        </div>
-    </nav>
 
     <div class="container-fluid">
-        
+        <!--Nav-->
+        <nav class="sticky">
+            <div class="logo">
+                <h4>KF</h4>
+            </div>
+            <ul class="nav-links">
+                <li class="nav-item"><a href="#home-section">Home</a></li>
+                <li class="nav-item"><a href="#project-section">Projects</a></li>
+                <li class="nav-item"><a href="#service-section">Services</a></li>
+                <li class="nav-item"><a href="#about-section">About</a></li>
+                <li class="nav-item"><a href="#contact-section">Contact</a></li>
+            </ul>
+            <div class="menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+    
+            </div>
+        </nav>
         <!--Home section-->
-        <section class="row-home">
-                <div class="column-home testing"></div>
-
-
-                <div class="column-home2 test">
+        <section class="row palmtree-bg" id="home-section">
+                <div class="content">
                     <h1 class="spacing-below">Kimberly Flores</h1>
-                    <div class="career">
-                        <p class="spacing-below">Front-End Developer</p>
-                        <p class="spacing-below">UX/UI Designer</p>
-                        <p class="spacing-below">Graphic Designer</p>
-                    </div>
-                    <div>
-                        <a class="btn2"href="projects.html">View My Work</a>
+                    <h3 class="spacing-below">Web Developer and Designer</h3>
+                    <button class="section-btn">Discover my Work</button>
+                </div>
+        </section>
+
+<!--Projects-->
+    <section id="project-section">
+        <div class="row heading">
+            <h2>Projects</h2>
+            <div class="line"></div>
+        </div>
+        <div class="row heading">
+            <span>
+                <button class="project-btn">Personal</button>
+                <button class="project-btn">Class</button>
+                <button class="project-btn">UX</button>
+            </span>
+        </div>
+
+        <div class="code-project">
+            <h4 class="sm-project-title">Recipe Keeps</h4>
+            <div class="greenline"><div class="sm-project-line"></div></div>
+            <div class="row2">
+                <div class="column">
+                    <img class="left-side"src="recipekeeps.png">
+                </div>
+                <div class="column right-side">
+                    <h4 class="project-title">Recipe Keeps</h4>
+                    <div class="project-line"></div>
+                    <p>Keep track of all your recipes in one single place. Users can create an account where they 
+                        can add, delete, and edit their own recipes. 
+                    </p>
+                    <p>Tools/Frameworks: React, Redux, Express, Nodejs, MongoDB, AWS-S3, Bootstrap, React router 
+                    </p>
+                    <div class="link-div">
+                        <a class="links" href="https://github.com/kimberlyflrs/recipe-keeps">Github link</a> 
+                        <a class="links" href="https://obscure-taiga-26298.herokuapp.com/">Demo</a>
                     </div>
                 </div>
+            </div>
+        </div>
 
 
-        </section>
+        <!--Pomodoro Clock-->
+        <div class="code-project">
+            <h4 class="sm-project-title">Pomodoro Clock</h4>
+            <div class="greenline"><div class="sm-project-line"></div></div>
+            <div class="row2">
+                <div class="column">
+                    <img class="left-side"src="pomodoro.png">
+                </div>
+                <div class="column right-side">
+                    <h4 class="project-title">Pomodoro Clock</h4>
+                    <div class="project-line"></div>
+                    <p>A timer that follows the pomodoro technique (focus on a task for 25 minutes, take a break for 5 minutes). The times are 
+                        adjustable for break and session length.
+                    </p>
+                    <p>Tools/Frameworks: React, Redux, Bootstrap</p>
+                    <div class="link-div">
+                        <a class="links" href="https://github.com/kimberlyflrs/pomodoro-clock">Github link</a> 
+                        <a class="links" href="https://pomodoro-clock-kf.herokuapp.com/">Demo</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="code-project">
+            <h4 class="sm-project-title">Multiplication Quiz</h4>
+            <div class="greenline"><div class="sm-project-line"></div></div>
+            <div class="row2">
+                <div class="column">
+                    <img class="left-side"src="multiplication.png">
+                </div>
+                <div class="column right-side">
+                    <h4 class="project-title">Multiplication Quiz</h4>
+                    <div class="project-line"></div>
+                    <p>A web-based application that allows users to practice 1-12 multiplication tables in 
+                        different game modes. A user can practice a specific multiplication table, answer as 
+                        many questions in a minute, or answer 10 random multiplication questions. 
+                    </p>
+                    <p>Tools/Frameworks: HTML5, CSS3, JavaScript, Bootstrap</p>
+                    <div class="link-div">
+                        <a class="links" href="https://github.com/kimberlyflrs/Multiplication-Quiz">Github link</a> 
+                        <a class="links" href="https://multiplication-pracctice-quiz.herokuapp.com/">Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="code-project">
+            <h4 class="sm-project-title">Portfolio Website</h4>
+            <div class="greenline"><div class="sm-project-line"></div></div>
+            <div class="row2">
+                <div class="column">
+                    <img class="left-side"src="portfolio.png">
+                </div>
+                <div class="column right-side">
+                    <h4 class="project-title">Portfolio Website</h4>
+                    <div class="project-line"></div>
+                    <p>A website showcasing my coding, ui/ux, and design projects.
+                    </p>
+                    <p>Tools/Frameworks: HTML5, CSS3, JavaScript</p>
+                    <div class="link-div">
+                        <a class="links" href="https://github.com/kimberlyflrs/code-portfolio">Github link</a> 
+                        <a class="links">Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="code-project">
+            <h4 class="sm-project-title">Jewlery Shop Page</h4>
+            <div class="greenline"><div class="sm-project-line"></div></div>
+            <div class="row2">
+                <div class="column">
+                    <img class="left-side"src="jewleryshop.png">
+                </div>
+                <div class="column right-side">
+                    <h4 class="project-title">Jewlery Shop Page</h4>
+                    <div class="project-line"></div>
+                    <p>A home page for a jewlery shop. This is a single coded home page. All other pages do not link anywhere.
+                    </p>
+                    <div class="link-div">
+                        <a class="links" href="https://codepen.io/kimberlyflrs/pen/xxGwBaW">CodePen link</a> 
+                        <a class="links" href="https://codepen.io/kimberlyflrs/full/xxGwBaW">Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
     <!--Services-->
@@ -69,8 +188,9 @@
                 <h3 class="service-type">Development</h3>
                 <ul class="service">
                     <li>HTML5/CSS3/Sass</li>
-                    <li>React, Redux</li>
                     <li>JavaScript</li>
+                    <li>React, Redux</li>
+                    <li>Express, Node.js</li>
                     <li>Single Page Apps</li>
                     <li>Responsive Designs</li>
                 </ul>
@@ -128,6 +248,33 @@
                 </div>
             </div>
         </section>
+
+
+<!--Contact-->
+
+    <section id="contact-section">
+        <div class="row heading">
+            <h2>Let's Connect</h2>
+            <div class="line"></div>
+        </div>
+
+        <div class="row2">
+            <div class="column" id="palmimage"> 
+                <img src="single-palm-tree.jpg" id="palm"/>
+            </div>
+            <div class="column" id="contact">
+                <p>Hello! Thank you so much for expressing interest in my work. If you have a project 
+                    in mind or would like to chat, contact me using my email.
+                </p>
+                <div class="row spacing-top">
+                    <i class="far fa-envelope fa-2x spacing-below" id="envelope"></i>
+                    <a href="mailto: kimbermf@uci.edu">kimbermf@uci.edu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
 
     <!--Footer-->
