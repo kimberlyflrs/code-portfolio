@@ -23,7 +23,7 @@ body{
     opacity: 0;
 }
 
-#home, #project, #contact, .heading, .greenline, #image, #palmimage{
+#home, #project, .heading, .greenline, #image, #palmimage{
     text-align: center;
 }
 
@@ -316,58 +316,10 @@ i{
     padding: 0px 20px;
 }
 
-#contact-form{
-    padding: 15vh 0;
-    display:flex;
-    justify-content: center;
-}
-
-#form{
-    padding: 5vh 5vh;
-    background-color: white;
-    border-radius: 25px;
-    box-shadow:5px 10px 8px #32292f;
-    text-align: center;
-}
-
-.form-bg{
-    background-image: url(palm-trees.jpg);
-    background-color: #d7dae5;
-    background-position:center;
-    background-repeat: no-repeat;
-    height:100%;
-    background-size: cover;
-}
-
-input, textarea{
-    display:block;
-    margin-bottom: 20px;
-    width: 300px;
-}
-
 .cover{
     background-image: url(single-palm-tree.jpg);
 }
 
-input[type=text], input[type=email], textarea{
-    border:none;
-    border-bottom: 2px solid #32292f;
-    font-size: 15px;
-    padding: 10px
-}
-
-#submit{
-    background-color: #d3d0c2;
-    padding: 10px;
-    border: none;
-    border-radius: 30px;
-    color:white;
-}
-
-#submit:hover{
-    background-color: #ccb448;
-    color:white;
-}
 
 .line, .project-line{
     width: 200px;
@@ -426,6 +378,12 @@ input[type=text], input[type=email], textarea{
     .right-side{
         margin: 0 15vh;
     }
+
+    #contact, #about{
+        text-align:center;
+        margin: 0 15vh;
+    }
+
     .project-title, .project-line{
         display: none;
     }

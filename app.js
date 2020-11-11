@@ -80,7 +80,7 @@ const activeBtn = (project) =>{
 
 window.onload=function(){
     navSlide();
-    filterProjects("filterProject");
+    filterProjects("personal");
 }
 
 /*window.onscroll=function(){

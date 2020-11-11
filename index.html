@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&family=Poppins&display=swap" rel="stylesheet">
     <!--Link css, javascript files, possibly bootstrap-->
-    <script src="app.js"></script>
+    <script src="app.js">
+    </script>
+    
 </head>
 
 <body>
@@ -56,13 +58,13 @@
         </div>
         <div class="row heading">
             <span>
-                <button class="project-btn">Personal</button>
-                <button class="project-btn">Class</button>
-                <button class="project-btn">UX</button>
+                <button class="active-btn filter-btn personal" onclick= "filterProjects('personal')">Personal</button>
+                <button class="filter-btn class" onclick="filterProjects('class')">Class</button>
+                <button class="filter-btn ux" onclick="filterProjects('ux')">UX</button>
             </span>
         </div>
 
-        <div class="code-project">
+        <div class="code-project filterProject personal show">
             <h4 class="sm-project-title">Recipe Keeps</h4>
             <div class="greenline"><div class="sm-project-line"></div></div>
             <div class="row2">
@@ -87,7 +89,7 @@
 
 
         <!--Pomodoro Clock-->
-        <div class="code-project">
+        <div class="code-project filterProject personal show">
             <h4 class="sm-project-title">Pomodoro Clock</h4>
             <div class="greenline"><div class="sm-project-line"></div></div>
             <div class="row2">
@@ -109,7 +111,8 @@
             </div>
         </div>
 
-        <div class="code-project">
+        <!--Multiplication Quiz-->
+        <div class="code-project filterProject personal show">
             <h4 class="sm-project-title">Multiplication Quiz</h4>
             <div class="greenline"><div class="sm-project-line"></div></div>
             <div class="row2">
@@ -132,7 +135,9 @@
             </div>
         </div>
 
-        <div class="code-project">
+
+        <!--Portfolio Site-->
+        <div class="code-project filterProject personal show">
             <h4 class="sm-project-title">Portfolio Website</h4>
             <div class="greenline"><div class="sm-project-line"></div></div>
             <div class="row2">
@@ -153,7 +158,9 @@
             </div>
         </div>
 
-        <div class="code-project">
+
+        <!--Jewelry Page-->
+        <div class="code-project filterProject personal show">
             <h4 class="sm-project-title">Jewlery Shop Page</h4>
             <div class="greenline"><div class="sm-project-line"></div></div>
             <div class="row2">
@@ -172,6 +179,95 @@
                 </div>
             </div>
         </div>
+
+
+       <!--Tweet Page-->
+       <div class="code-project filterProject class">
+        <h4 class="sm-project-title">Tweet Analyzer</h4>
+        <div class="greenline"><div class="sm-project-line"></div></div>
+        <div class="row2">
+            <div class="column">
+                <img class="left-side"src="jewleryshop.png">
+            </div>
+            <div class="column right-side">
+                <h4 class="project-title">Tweet Analyzer</h4>
+                <div class="project-line"></div>
+                <p>The tweet analyzer looks up tweets
+                </p>
+                <div class="link-div">
+                    <a class="links" href="https://codepen.io/kimberlyflrs/pen/xxGwBaW">CodePen link</a> 
+                    <a class="links" href="https://codepen.io/kimberlyflrs/full/xxGwBaW">Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>        
+
+       <!--Spotify Page-->
+       <div class="code-project filterProject class">
+        <h4 class="sm-project-title">Spotify Page</h4>
+        <div class="greenline"><div class="sm-project-line"></div></div>
+        <div class="row2">
+            <div class="column">
+                <img class="left-side"src="jewleryshop.png">
+            </div>
+            <div class="column right-side">
+                <h4 class="project-title">Spotify Page</h4>
+                <div class="project-line"></div>
+                <p>Using the spotify api, users can view information about a song, artist, or album.
+                </p>
+                <div class="link-div">
+                    <a class="links" href="https://codepen.io/kimberlyflrs/pen/xxGwBaW">CodePen link</a> 
+                    <a class="links" href="https://codepen.io/kimberlyflrs/full/xxGwBaW">Demo</a>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+
+       <!--Sleep Logger-->
+       <div class="code-project filterProject class">
+        <h4 class="sm-project-title">Sleep Logger App</h4>
+        <div class="greenline"><div class="sm-project-line"></div></div>
+        <div class="row2">
+            <div class="column">
+                <img class="left-side"src="jewleryshop.png">
+            </div>
+            <div class="column right-side">
+                <h4 class="project-title">Sleep Logger App</h4>
+                <div class="project-line"></div>
+                <p>The sleep logger app allows the user to track how long they sleep. Information is saved 
+                    through Firebase and previous entries can be viewed.
+                </p>
+                <div class="link-div">
+                    <a class="links" href="https://codepen.io/kimberlyflrs/pen/xxGwBaW">CodePen link</a> 
+                    <a class="links" href="https://codepen.io/kimberlyflrs/full/xxGwBaW">Demo</a>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+
+       <!--Information Retrieval-->
+       <div class="code-project filterProject class">
+        <h4 class="sm-project-title">ICS Search Engine</h4>
+        <div class="greenline"><div class="sm-project-line"></div></div>
+        <div class="row2">
+            <div class="column">
+                <img class="left-side"src="jewleryshop.png">
+            </div>
+            <div class="column right-side">
+                <h4 class="project-title">ICS Search Engine</h4>
+                <div class="project-line"></div>
+                <p>The ICS Search Engine looks through an index.
+                </p>
+                <div class="link-div">
+                    <a class="links" href="https://codepen.io/kimberlyflrs/pen/xxGwBaW">CodePen link</a> 
+                    <a class="links" href="https://codepen.io/kimberlyflrs/full/xxGwBaW">Demo</a>
+                </div>
+            </div>
+        </div>
+    </div> 
+
     </section>
 
 
