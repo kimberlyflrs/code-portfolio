@@ -292,7 +292,7 @@ h1, h2, h4{
 }
 
 
-button:hover, .filter-btn:hover, .active-btn{
+button:hover, .filter-btn:hover, .active-btn, .links:hover{
     background-color: #b8b08d;
     color:white;
 }
