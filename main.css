@@ -23,38 +23,7 @@ body{
     opacity: 0;
 }
 
-#home, #project, .heading, .greenline, #image, #palmimage, #disclaimer{
-    text-align: center;
-}
-
-.heading{
-    margin: 5vh;
-}
-
-.row-home{
-    display: flex;
-}
-
-.column-home{
-    flex: 50%;
-}
-
-.column-home2{
-    flex:50%
-}
-
-
-/*WORKING HERE RIGHT NOW*/
-#about-section, #contact-section{
-    margin: 10vh 0;
-}
-
-#about, #contact{
-    margin-right: 15vh;
-    padding:20px;
-    text-align: justify;
-}
-
+/*Image CSS*/
 #img{
     height: 50vh;
     width:auto;
@@ -67,7 +36,7 @@ body{
     text-align:center;
 }
 
-
+/*Service CSS*/
 .column-3{
    flex: 33%;
    margin: 0 25px;
@@ -90,15 +59,7 @@ body{
     padding: 10px;
 }
 
-
-.project{
-    text-align: center;
-    margin-top:8vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
+/*Home CSS*/
 .palmtree-bg{
     background-image: url(palm-trees.jpg);
     background-color: #d7dae5;
@@ -116,8 +77,8 @@ body{
     padding: 30vh 0;
 }
 
-
-.btn2, .project-btn, .filter-btn, .section-btn{
+/*Button*/
+.filter-btn, .section-btn{
     background-color: #8BB380;
     padding: 10px 30px;
     width: 175px;
@@ -135,7 +96,13 @@ body{
     padding:50px 0px;
 }
 
-.links{
+.filter-btn:hover, .active-btn, .links-btn:hover{
+    background-color: #b8b08d;
+    color:white;
+}
+
+/*Project links CSS*/
+.links-btn{
     background-color: #8BB380;
     padding: 10px 30px;
     width: 175px;
@@ -150,41 +117,11 @@ body{
     padding:30px 0;
 }
 
-.project-btn{
-    width: 140px;
-    margin: 15px;
-}
-
-.btn2:hover{
-    background-color: #d3d0c2;
-    color:white;
-}
-
-.career{
-    padding: 50px 0;
-}
-
 h1{
     font-size: 40px;
 }
 
-.career p{
-    font-size: 20px;
-}
-/*WORKING HERE RIGHT NOW*/
-
-#service-section{
-    margin: 20px 0;
-}
-
-.spacing-below{
-    padding-bottom: 20px;
-}
-
-.spacing-top{
-    padding-top: 20px;
-}
-
+/*Nav CSS*/
 nav{
     display: flex;
     justify-content: space-around;
@@ -238,6 +175,8 @@ nav{
     transition: all 0.3s ease;
 }
 
+
+/* Layout Positioning*/
 .row2 {
     display: flex;
   }
@@ -262,7 +201,18 @@ nav{
     width: 50%;
   }
 
-.filterProject{ /*filter*/
+  #about-section, #contact-section, #service-section{
+    margin: 10vh 0;
+}
+
+#about, #contact{
+    margin-right: 15vh;
+    padding:20px;
+    text-align: justify;
+}
+
+/*Project CSS*/
+.filterProject{ 
     padding: 20px 0;
     display:none;
 }
@@ -271,26 +221,7 @@ nav{
     display:block;
 }
 
-#filter{
-    margin: 20px;
-}
-
-/*working above here*/
-
-p, button, li, nav, label, h3{
-    font-family: 'Poppins', sans-serif;
-}
-
-h1, h2, h4{
-    font-family: 'Libre Caslon Text', sans-serif;
-}
-
-
-button:hover, .filter-btn:hover, .active-btn, .links:hover{
-    background-color: #b8b08d;
-    color:white;
-}
-
+/*Footer CSS*/
 #footer{
     background-color: #32292f;
     padding: 30px;
@@ -305,15 +236,9 @@ i, #footer{
     color: white;
 }
 
-
 i{
     padding: 0px 20px;
 }
-
-.cover{
-    background-image: url(single-palm-tree.jpg);
-}
-
 
 .line, .project-line{
     width: 200px;
@@ -322,34 +247,46 @@ i{
     display: inline-block;
 }
 
-.filter{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
 #email{
     text-decoration: none;
     color: #8BB380;
     font-weight: bold;
 }
 
+/* Other */
+.spacing-below{
+    padding-bottom: 20px;
+}
+
+.spacing-top{
+    padding-top: 20px;
+}
+
 .bold{
     font-weight: bold;
 }
 
+.center{
+    text-align: center;
+}
+
+.heading{
+    margin: 5vh;
+}
+
+p, button, li, nav, h3, h4, a{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, .logo{
+    font-family: 'Libre Caslon Text', sans-serif;
+}
+
+/* Screen Sizes */
 @media screen and (max-width: 768px){
     /*body{
         overflow: hidden;
     }*/
-    .filter{
-        display: block;
-        text-align: center;
-    }
-
-    .filter button{
-        margin: 5px;
-    }
 
 
     .nav-links{
@@ -378,7 +315,6 @@ i{
         flex: 100%
     }
 
-
     .right-side{
         margin: 0 15vh;
     }
@@ -402,7 +338,6 @@ i{
         display: inline-block;
     }
 
-
     h1{
         font-size: 30px;
     }
@@ -413,10 +348,6 @@ i{
     .sm-project-title, .sm-project-line{
         display:none;
     }
-}
-
-.nav-active{
-    transform: translateX(0%);
 }
 
 @keyframes navLinkFade{
