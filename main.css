@@ -5,7 +5,7 @@
 }
 body{
     background-color: white;
-    animation: fadeInAnimation ease 4s; 
+    animation: fadeInAnimation ease 3s; 
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;
 }
@@ -23,7 +23,7 @@ body{
     opacity: 0;
 }
 
-#home, #project, .heading, .greenline, #image, #palmimage{
+#home, #project, .heading, .greenline, #image, #palmimage, #disclaimer{
     text-align: center;
 }
 
@@ -117,7 +117,7 @@ body{
 }
 
 
-.btn2, .project-btn, .filter-btn{
+.btn2, .project-btn, .filter-btn, .section-btn{
     background-color: #8BB380;
     padding: 10px 30px;
     width: 175px;
@@ -128,13 +128,7 @@ body{
 }
 
 .section-btn{
-    background-color: #8BB380;
-    padding: 10px 30px;
     width: 275px;
-    border: none;
-    border-radius: 30px;
-    color:white;
-    text-decoration: none;  
 }
 
 .code-project{
@@ -391,7 +385,7 @@ i{
 
     #contact, #about{
         text-align:center;
-        margin: 0 15vh;
+        margin: 0 5vh;
     }
 
     .project-title, .project-line{
