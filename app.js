@@ -1,15 +1,19 @@
 //javascript file
+var click = 0;
 
 const navSlide = ()=>{
     const menu = document.querySelector('.menu');
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li');
 
+
     menu.addEventListener('click', ()=>{
+        console.log('clicked');
         nav.classList.toggle('nav-active');
         nav.style.transition= 'transform 0.5s ease-in';
         //needs to be removed afterwards to prevent 
         //the transition occuring after click
+        
 
         navLinks.forEach((link, index)=>{
             if(link.style.animation){
@@ -19,9 +23,14 @@ const navSlide = ()=>{
                 link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + .75}s`;
             }
         })
-
         menu.classList.toggle('toggle');
     })
+}
+
+/* Removes the transition after a click */
+const navlinkClick = ()=>{
+    const links = document.querySelectorAll('.nav-item a');
+    console.log(links);
 }
 
 /*Filtering elements on the project page */
@@ -80,6 +89,7 @@ const activeBtn = (project) =>{
 
 window.onload=function(){
     navSlide();
+    navlinkClick();
     filterProjects("personal");
 }
 
