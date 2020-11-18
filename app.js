@@ -70,27 +70,35 @@ const activeBtn = (project) =>{
     }    
 }
 
+const scrolling = ()=>{
+    var sections = document.querySelectorAll("section");
+    var scrollPosition = document.documentElement.scrollTop;
 
+    sections.forEach( section =>{
+        if (scrollPosition >= section.offsetTop && scrollPosition < section.offsetTop+section.offsetHeight){
+            var currentId = section.attributes.id.value;
+            removeActiveLink();
+            addActiveLink(currentId);
+        }
+    })
+}
 
-/*const scroll = () =>{
-    //make items visible on scroll
-    var items = document.querySelectorAll('.hide');
-    console.log(items);
-    for (var i=0; i<items.length;i++){
-        console.log(items[i]);
-        var bottom_object = items[i].position().top + items[i].outerHeight();
-        var bottom_window = window.scrollTop()+window.innerHeight();
+const removeActiveLink = () =>{
+    document.querySelectorAll("nav li a").forEach((link)=>{
+        link.classList.remove("active-link");
+    })
+}
 
-        console.log(bottom_object);
-        console.log(bottom_window);
-    }
-}*/
+const addActiveLink = (id) =>{
+    var select = `nav a[href="#${id}"]`
+    document.querySelector(select).classList.add("active-link");
+}
 
 window.onload=function(){
     navSlide();
     filterProjects("personal");
 }
 
-/*window.onscroll=function(){
-    scroll();
-}*/
+window.onscroll = function(){
+    scrolling();
+}

@@ -10,6 +10,10 @@ body{
     animation-fill-mode: forwards;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 @keyframes fadeInAnimation { 
     0% { 
         opacity: 0; 
@@ -163,7 +167,7 @@ nav{
     color:black;
 }
 
-.nav-links a:hover{
+.nav-links a:hover, .active-link{
     color: #b8b08d;
     font-weight: bold;
 
@@ -208,8 +212,14 @@ nav{
     width: 50%;
   }
 
+  section:before {
+    height: 8vh;
+    content: "";
+    display:block;
+}
+
   #about-section, #contact-section, #service-section{
-    margin: 10vh 0;
+    margin-bottom: 50px;
 }
 
 #about, #contact{
@@ -231,7 +241,7 @@ nav{
 /*Footer CSS*/
 #footer{
     background-color: #32292f;
-    padding: 30px;
+    padding: 8vh;
     text-align: center;
 }
 
@@ -265,6 +275,10 @@ i{
     padding-bottom: 20px;
 }
 
+.spacing-below-contact{
+    padding-bottom: 10vh;
+}
+
 .spacing-top{
     padding-top: 20px;
 }
@@ -291,6 +305,7 @@ h1, h2, .logo{
 
 /* Screen Sizes */
 @media screen and (max-width: 768px){
+
 
     .nav-links{
         position: absolute;
