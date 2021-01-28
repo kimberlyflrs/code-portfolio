@@ -241,6 +241,7 @@ nav{
 /*Footer CSS*/
 #footer{
     background-color: #32292f;
+    padding: 10vh;
     text-align: center;
 }
 
