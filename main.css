@@ -24,31 +24,98 @@ html{
 }
 
 
-/*Home CSS*/
+/*navbar CSS*/
+.navbar{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
 #logo{
     padding-top: 20px;
     padding-left: 20px;
     padding-bottom: 20px;
 }
 
+.nav-links ul{
+    display: flex;
+    margin:0;
+    padding:0;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links li a {
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.nav-links li:hover{
+    text-decoration: underline;
+}
+
+.toggle-btn{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-btn .bar{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+
+/*hero image css*/
 #hero{
     height:95vh;
-    background-image: url(birds.jpg);
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .content{
     margin:0 10px;
     text-align:center;
     padding: 20vh 10vh;
-    background-color: rgba(27, 25, 25, 0.3);
 }
 
-/*Project links CSS*/
+.content h1, .content p{
+    padding-bottom: 3rem;
+}
+
+button, button:hover{
+    background-color: #689689;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: none;
+}
+button:hover{
+    background-color: #44635a;
+}
+
+/*Fonts*/
+h1{
+    font-family: 'Forum', cursive;
+}
+
 h1{
     font-size: 40px;
+}
+
+p, a{
+    font-family: 'Work Sans', sans-serif;
 }
 
 /*Footer CSS*/
@@ -59,26 +126,45 @@ h1{
 }
 
 i, #footer, h1, p, a{
-    color: white;
+    color: black;
 }
 
 i{
     padding: 0px 20px;
 }
 
-/* Other */
-p, a{
-    font-family: 'Poppins', sans-serif;
-}
-
-h1, .logo{
-    font-family: 'Libre Caslon Text', sans-serif;
-}
 
 
 /* Screen Sizes */
 @media screen and (max-width: 768px){
-    h1{
-        font-size: 20px;
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-btn {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+    }
+
+    .nav-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav-links ul li {
+        text-align: center;
+    }
+
+    .nav-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
     }
 }
