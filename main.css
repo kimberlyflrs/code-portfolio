@@ -105,6 +105,51 @@ button:hover{
     background-color: #44635a;
 }
 
+/*About me*/
+#about, .casestudy{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+}
+
+#about div, .casestudy div{
+    width: 50%;
+    margin-right: 20vh;
+    margin-left: 20vh;
+}
+
+#about p, .casestudy p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#about button, .casestudy button{
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+/*Projects*/
+.filters{
+    display: flex;
+    flex-direction: row;  
+    margin-right: 20vh;
+    margin-left: 20vh;
+}
+.filters p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.detail{
+    background-color: #F8F2DC;
+    padding: 50px;
+}
+
+.caseimg{
+    background-color: aqua;
+}
+
 /*Fonts*/
 h1{
     font-family: 'Forum', cursive;
@@ -125,14 +170,17 @@ p, a{
     text-align: center;
 }
 
-i, #footer, h1, p, a{
+#footer, h1, p, a{
     color: black;
 }
 
 i{
-    padding: 0px 20px;
+    padding: 1rem 20px;
 }
 
+i, #footer p{
+    color:white;
+}
 
 
 /* Screen Sizes */
@@ -149,6 +197,8 @@ i{
     .nav-links {
         display: none;
         width: 100%;
+        transition: 5s;
+
     }
 
     .nav-links ul {
@@ -158,6 +208,7 @@ i{
 
     .nav-links ul li {
         text-align: center;
+        transition: 3s;
     }
 
     .nav-links ul li a {
@@ -166,5 +217,30 @@ i{
 
     .nav-links.active {
         display: flex;
+        background-color: white;
+
     }
+
+    /*About me*/
+    #about, .casestudy{
+        display: flex;
+        flex-direction: column;
+        margin-top: 15vh;
+    }
+
+    #about div, .casestudy div{
+        width: 100%;
+        padding-right: 5vh;
+        padding-left: 5vh;
+    }
+
+    .filters{
+        display: flex;
+        flex-direction: row;  
+    }
+    .filters p{
+        padding-left: 3vh;
+        padding-right: 3vh;
+    }
+    
 }
